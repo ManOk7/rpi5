@@ -1,1 +1,6 @@
-pip install mediapipe==0.10.9 --extra-index-url https://google-mediapipe-python.s3.amazonaws.com/raspberrypi/aarch64/
+# Install required packages
+sudo apt update
+sudo apt install -y python3-picamera2 python3-opencv python3-numpy
+
+# Install MediaPipe
+pip3 install mediapipe --break-system-packages
