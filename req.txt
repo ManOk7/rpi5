@@ -1,23 +1,5 @@
-# Update system
-sudo apt update
-sudo apt upgrade -y
-
-# Install Picamera2 and dependencies
-sudo apt install -y python3-picamera2 python3-libcamera python3-kms++
-
-# Install other required packages
-sudo apt install -y python3-opencv python3-numpy
-
-# Install MediaPipe
-pip3 install mediapipe --break-system-packages
-
-
-
-# Install from pip (if apt version not available)
-sudo apt install -y python3-pip python3-libcamera libcamera-apps
-pip3 install picamera2 --break-system-packages
-
-
-
-sudo apt install -y gstreamer1.0-tools gstreamer1.0-libcamera
-pip3 install mediapipe --break-system-packages
+git clone https://github.com/ArduCAM/Arducam-Pivariety-V4L2-Driver.git
+cd Arducam-Pivariety-V4L2-Driver
+chmod +x install_pivariety.sh
+sudo ./install_pivariety.sh
+sudo reboot
